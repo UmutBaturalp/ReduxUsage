@@ -36,12 +36,14 @@ const Home = props => {
           <TextInput
             style={styles.textInput}
             onChangeText={text => setTitle(text)}
+            value={title}
           />
         </View>
         <View style={styles.inputContainer}>
           <Text style={styles.text}>Enter your description</Text>
           <TextInput
             style={styles.textInput}
+            value={description}
             onChangeText={text => setDescription(text)}
           />
         </View>
